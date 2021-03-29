@@ -5,7 +5,7 @@
 .background-3 {
     background-color: #243b64;
     background-position: center bottom;
-    height: 2000px;
+    height: auto;
 
 }
 
@@ -17,9 +17,53 @@
 }
 
 .background-1 {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     background: no-repeat url("../img/Perro_transparent.png") center;
+}
+
+@media (max-width:997px) {
+    .background-1 {
+        background-size: 550px;
+        height: 50vh;
+
+    }
+}
+
+@media (max-width:787px) {
+    .background-1 {
+        background-size: 500px;
+        height: 45vh;
+
+    }
+    .card-product{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width:595px) {
+    .background-1 {
+        background-size: 450px;
+        height: 40vh;
+
+    }
+}
+
+@media (max-width:406px) {
+    .background-1 {
+        background-size: 350px;
+        height: 30vh;
+
+    }
+
+    .background-2 {
+        background-color: #cd221a;
+        background-position: center top;
+        height: 70vh;
+
+    }
+
 }
 
 .background-nav-bar {
@@ -42,46 +86,73 @@
 }
 
 .name-text {
-    font-size: 110px;
+    font-size: 76px;
+    color: #ffe66d;
     background-color: transparent !important;
+    text-shadow: 4px 3px 3px #012a4a;
+}
+
+@media (max-width:1203px) {
+    .name-text {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:997px) {
+    .name-text {
+        font-size: 40px;
+        text-align: center;
+    }
 }
 
 .hr-1 {
-    width:50%;
-    height: 7px !important;
-    background-color: #f4c95d;
-    border-radius: 5px;
-}
-.hr-2 {
-    width:80%;
-    height: 7px !important;
-    background-color: #f4c95d;
-    border-radius: 5px;
-}
-.hr-3 {
-    width:100%;
+    width: 50%;
     height: 7px !important;
     background-color: #f4c95d;
     border-radius: 5px;
 }
 
-  
+.hr-2 {
+    width: 80%;
+    height: 7px !important;
+    background-color: #f4c95d;
+    border-radius: 5px;
+}
+
+.hr-3 {
+    width: 100%;
+    height: 7px !important;
+    background-color: #f4c95d;
+    border-radius: 5px;
+}
+
+
 .fadeTop {
-  opacity: 0; 
-  transform: translate(0, 10vh);
-  transition: all 1s;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
 }
 
 .visible {
-  opacity: 1;
-  transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
-.cash-1{
-	color: #7bb926;
-	font-size: 30px;
+.cash-1 {
+    color: #7bb926;
+    font-size: 30px;
 }
-.cash-2{
-	color: #7bb926;
-	font-size: 20px;
+
+.cash-2 {
+    color: #7bb926;
+    font-size: 20px;
+}
+
+.margin-top-contact{
+	margin-top: -20px;
+}
+
+.footer-fancy{
+	
+	    background-color: #f3b017;
 }
