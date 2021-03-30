@@ -1,30 +1,47 @@
 * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     font-family: 'Dela Gothic One' !important;
     font-style: normal;
 }
 
-.background-3 {
+.fondo-azul {
     background-color: #243b64;
     background-position: center bottom;
     height: auto;
-
 }
 
-.background-2 {
+.fondo-rojo {
     background-color: #cd221a;
     background-position: center top;
     height: 75vh;
-
 }
 
-.background-1 {
-    height: 60vh;
+.fondo{
+    background-color: #f3b017;
+}
+
+.texto-azul{
+    color: #243b64;
+}
+
+.cartilla-izquierda, .cartilla-derecha{
+    background-color:#f3b017;
+    box-shadow: 5px 5px 5px black;
+}
+
+.imagen {
+    height: 45vh;
     width: 100%;
     background: no-repeat url("../img/Perro_transparent.png") center;
+    z-index: 10;
 }
 
 @media (max-width:997px) {
-    .background-1 {
+    .imagen {
         background-size: 550px;
         height: 50vh;
 
@@ -32,7 +49,7 @@
 }
 
 @media (max-width:787px) {
-    .background-1 {
+    .imagen {
         background-size: 500px;
         height: 45vh;
 
@@ -45,7 +62,7 @@
 }
 
 @media (max-width:595px) {
-    .background-1 {
+    .imagen {
         background-size: 450px;
         height: 40vh;
 
@@ -53,19 +70,31 @@
 }
 
 @media (max-width:406px) {
-    .background-1 {
+    .imagen {
         background-size: 350px;
         height: 30vh;
 
     }
 
-    .background-2 {
+    .fondo-rojo {
         background-color: #cd221a;
         background-position: center top;
         height: 70vh;
 
     }
 
+}
+
+
+@media (min-width: 580px) and (max-width: 1400px){
+
+.cartilla-izquierda{
+    clip-path: polygon(74% 0, 100% 31%, 100% 100%, 0 100%, 0 0);
+}
+
+.cartilla-derecha{
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%, 0 31%);
+}
 }
 
 .background-nav-bar {
@@ -78,54 +107,26 @@
     background-color: #f3b017;
 }
 
-.c-text {
-    display: table;
-}
-
-.h-text {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.name-text {
-    font-size: 76px;
+.titulo {
     color: #ffe66d;
     background-color: transparent !important;
     text-shadow: 4px 3px 3px #012a4a;
 }
 
-@media (max-width:1203px) {
-    .name-text {
-        font-size: 60px;
-    }
-}
-
-@media (max-width:997px) {
-    .name-text {
-        font-size: 40px;
-        text-align: center;
-    }
-}
-
-.hr-1 {
-    width: 50%;
+.hr-1, .hr-2, .hr-3  {
     height: 7px !important;
     background-color: #f4c95d;
     border-radius: 5px;
 }
 
+.hr-1{
+    width: 50%;
+}
 .hr-2 {
     width: 80%;
-    height: 7px !important;
-    background-color: #f4c95d;
-    border-radius: 5px;
 }
-
 .hr-3 {
     width: 100%;
-    height: 7px !important;
-    background-color: #f4c95d;
-    border-radius: 5px;
 }
 
 
@@ -140,57 +141,21 @@
     transform: translate(0, 0);
 }
 
-.cash-1 {
-    color: #7bb926;
-    font-size: 25px;
-}
-
-.cash-2 {
-
-    color: #7bb926;
-    font-size: 20px;
-}
-
-.margin-top-contact {
-    margin-top: -25px;
-}
-
-.footer-fancy {
-
-    background-color: #f3b017;
+.cash-1, .cash-2 {
+    color:#cd221a;
 }
 
 .box-contact {
-
     border-radius: 8px;
     border: #243b64 12px double;
-    line-height: 70px;
-    margin: 0 auto 10px auto;
-    text-align: center;
-    width: 50%;
-    height: 100px;
     background-color: #f3b017;
 }
-@media (max-width:1411px) {
-    .text-contact {
-        font-size: 16px;
-    }
-}
-@media (max-width:1271px) {
-    .text-contact {
-        font-size: 13px;
-    }
-    .box-contact{
-    width: 75%;
-    height: 100px;
-    }
-}
-
-
-
 .tapa-bocas{
     background: no-repeat url("../img/tapa-bocas.jpg") right;
     background-size: 30%;
     width: 50px;
     height: 100px;
+}
+.footer-fancy {
+    background-color: #f3b017;
 }
