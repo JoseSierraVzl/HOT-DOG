@@ -1,5 +1,6 @@
 * {
-    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Dela Gothic One' !important;
+    font-style: normal;
 }
 
 .background-3 {
@@ -36,10 +37,11 @@
         height: 45vh;
 
     }
-    .card-product{
-		margin-left: auto;
-		margin-right: auto;
-	}
+
+    .card-product {
+        margin-left: auto ;
+        margin-right: auto ;
+    }
 }
 
 @media (max-width:595px) {
@@ -140,19 +142,55 @@
 
 .cash-1 {
     color: #7bb926;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .cash-2 {
+
     color: #7bb926;
     font-size: 20px;
 }
 
-.margin-top-contact{
-	margin-top: -20px;
+.margin-top-contact {
+    margin-top: -25px;
 }
 
-.footer-fancy{
-	
-	    background-color: #f3b017;
+.footer-fancy {
+
+    background-color: #f3b017;
+}
+
+.box-contact {
+
+    border-radius: 8px;
+    border: #243b64 12px double;
+    line-height: 70px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    background-color: #f3b017;
+}
+@media (max-width:1411px) {
+    .text-contact {
+        font-size: 16px;
+    }
+}
+@media (max-width:1271px) {
+    .text-contact {
+        font-size: 13px;
+    }
+    .box-contact{
+    width: 75%;
+    height: 100px;
+    }
+}
+
+
+
+.tapa-bocas{
+    background: no-repeat url("../img/tapa-bocas.jpg") right;
+    background-size: 30%;
+    width: 50px;
+    height: 100px;
 }

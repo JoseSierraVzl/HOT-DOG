@@ -12,3 +12,14 @@ window.addEventListener('scroll', function()  {
       }
     }
 });
+$( document ).ready(function() {
+    $('#myModal').modal('toggle')
+});
+
+var close=document.getElementById("close");
+
+close.addEventListener("click",function(){
+
+   $('#myModal').modal('toggle')
+
+})
