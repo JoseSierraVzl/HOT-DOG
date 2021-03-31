@@ -1,7 +1,7 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     font-family: 'Dela Gothic One' !important;
@@ -20,31 +20,42 @@
     height: 75vh;
 }
 
-.fondo{
+.fondo {
     background-color: #f3b017;
 }
 
-.texto-azul{
+.texto-azul {
     color: #243b64;
 }
 
-.cartilla-izquierda, .cartilla-derecha{
-    background-color:#f3b017;
+.texto-rojo {
+    color: #cd221a;
+}
+
+.cartilla-izquierda,
+.cartilla-derecha {
+    background-color: #f3b017;
     box-shadow: 5px 5px 5px black;
 }
 
 .imagen {
-    height: 45vh;
+    height: 44vh;
     width: 100%;
     background: no-repeat url("../img/Perro_transparent.png") center;
+    background-size: 470px;
     z-index: 10;
 }
 
+
 @media (max-width:997px) {
     .imagen {
-        background-size: 550px;
-        height: 50vh;
+        background-size: 500px;
+        height: 40vh;
 
+    }
+
+    .fondo-rojo {
+        height: 70vh;
     }
 }
 
@@ -56,45 +67,64 @@
     }
 
     .card-product {
-        margin-left: auto ;
-        margin-right: auto ;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media (max-width:595px) {
     .imagen {
-        background-size: 450px;
-        height: 40vh;
+        background-size: 300px;
+        height: 25vh;
 
+    }
+
+    .fondo-rojo {
+        height: 70vh;
     }
 }
 
 @media (max-width:406px) {
     .imagen {
-        background-size: 350px;
-        height: 30vh;
+        background-size: 165px;
+        height: 12vh;
 
     }
 
     .fondo-rojo {
         background-color: #cd221a;
         background-position: center top;
-        height: 70vh;
+        height: 60vh;
+
+    }
+
+}
+
+@media (max-width:384px) {
+    .imagen {
+        background-size: 125px;
+        height: 12vh;
+
+    }
+
+    .fondo-rojo {
+        height: 80vh;
 
     }
 
 }
 
 
-@media (min-width: 580px) and (max-width: 1400px){
 
-.cartilla-izquierda{
-    clip-path: polygon(74% 0, 100% 31%, 100% 100%, 0 100%, 0 0);
-}
+@media (min-width: 580px) and (max-width: 1400px) {
 
-.cartilla-derecha{
-    clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%, 0 31%);
-}
+    .cartilla-izquierda {
+        clip-path: polygon(74% 0, 100% 31%, 100% 100%, 0 100%, 0 0);
+    }
+
+    .cartilla-derecha {
+        clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%, 0 31%);
+    }
 }
 
 .background-nav-bar {
@@ -113,18 +143,22 @@
     text-shadow: 4px 3px 3px #012a4a;
 }
 
-.hr-1, .hr-2, .hr-3  {
+.hr-1,
+.hr-2,
+.hr-3 {
     height: 7px !important;
     background-color: #f4c95d;
     border-radius: 5px;
 }
 
-.hr-1{
+.hr-1 {
     width: 50%;
 }
+
 .hr-2 {
     width: 80%;
 }
+
 .hr-3 {
     width: 100%;
 }
@@ -141,8 +175,9 @@
     transform: translate(0, 0);
 }
 
-.cash-1, .cash-2 {
-    color:#cd221a;
+.cash-1,
+.cash-2 {
+    color: #cd221a;
 }
 
 .box-contact {
@@ -150,12 +185,25 @@
     border: #243b64 12px double;
     background-color: #f3b017;
 }
-.tapa-bocas{
+
+.tapa-bocas {
     background: no-repeat url("../img/tapa-bocas.jpg") right;
     background-size: 30%;
     width: 50px;
     height: 100px;
 }
+
 .footer-fancy {
     background-color: #f3b017;
 }
+
+.box-promociones{
+    background-color:#f3b017;
+    border-radius: 10px;
+
+}
+.btn-color-num{
+    background-color: #cd221a !important;
+    color: white !important;
+}
+

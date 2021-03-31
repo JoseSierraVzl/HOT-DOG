@@ -23,3 +23,19 @@ close.addEventListener("click",function(){
    $('#myModal').modal('toggle')
 
 })
+
+var btnAleatorio = document.getElementById('btn-aleatorio');
+var numText = document.getElementById('num-premiado');
+var textDelNum = document.getElementById('textDelNum');
+
+btnAleatorio.addEventListener("click",function numRandom() {
+    var aleatorio = Math.round(Math.random()*20);
+    textDelNum.innerHTML="Tu numero premiado es:";
+    numText.innerHTML= aleatorio;
+    btnAleatorio.disabled=true;
+
+    return aleatorio
+
+});
+
+
