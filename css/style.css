@@ -8,20 +8,31 @@
     font-style: normal;
 }
 
-.fondo-azul {
-    background-color: #243b64;
+.position-fondo-azul {
     background-position: center bottom;
     height: auto;
 }
 
-.fondo-rojo {
-    background-color: #cd221a;
+.position-fondo-rojo {
     background-position: center top;
     height: 75vh;
 }
 
-.fondo {
+.fondo-azul {
+    background-color: #243b64;
+}
+
+.fondo-rojo {
+    background-color: #cd221a !important;
+}
+
+.fondo-mostaza {
     background-color: #f3b017;
+
+}
+
+.texto-mostaza {
+    color: #f3b017;
 }
 
 .texto-azul {
@@ -32,10 +43,16 @@
     color: #cd221a;
 }
 
-.cartilla-izquierda,
-.cartilla-derecha {
-    background-color: #f3b017;
+
+.cartilla-horarios,
+.cartilla-pagos {
     box-shadow: 5px 5px 5px black;
+
+}
+
+.card-product {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imagen {
@@ -47,56 +64,32 @@
 }
 
 
-@media (max-width:997px) {
+@media (min-width:787px) and (max-width:997px) {
     .imagen {
         background-size: 500px;
         height: 40vh;
-
     }
 
-    .fondo-rojo {
+    .position-fondo-rojo {
         height: 70vh;
     }
+
 }
 
-@media (max-width:787px) {
-    .imagen {
-        background-size: 500px;
-        height: 45vh;
 
-    }
-
-    .card-product {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width:595px) {
+@media (min-width:406px) and (max-width:595px) {
     .imagen {
         background-size: 300px;
         height: 25vh;
 
     }
 
-    .fondo-rojo {
-        height: 70vh;
-    }
-}
-
-@media (max-width:406px) {
-    .imagen {
-        background-size: 160px;
-        height: 13vh;
-
-    }
-
-    .fondo-rojo {
-        background-color: #cd221a;
+    .position-fondo-rojo {
         background-position: center top;
         height: 68vh;
 
     }
+
 
 }
 
@@ -107,7 +100,7 @@
 
     }
 
-    .fondo-rojo {
+    .position-fondo-rojo {
         height: 70vh;
 
     }
@@ -115,26 +108,14 @@
 }
 
 
-
 @media (min-width: 580px) and (max-width: 1400px) {
-
-    .cartilla-izquierda {
+    .cartilla-horarios {
         clip-path: polygon(74% 0, 100% 31%, 100% 100%, 0 100%, 0 0);
     }
 
-    .cartilla-derecha {
+    .cartilla-pagos {
         clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%, 0 31%);
     }
-}
-
-.background-nav-bar {
-    line-height: 70px;
-    border-top: 10px solid #cd221a;
-    margin: 0 auto 10px auto;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    background-color: #f3b017;
 }
 
 .titulo {
@@ -147,7 +128,7 @@
 .hr-2,
 .hr-3 {
     height: 7px !important;
-    background-color: #f4c95d;
+    background-color: #ffe66d;
     border-radius: 5px;
 }
 
@@ -175,36 +156,8 @@
     transform: translate(0, 0);
 }
 
-.cash-1,
-.cash-2 {
-    color: #cd221a;
-}
 
 .box-contact {
     border-radius: 8px;
     border: #243b64 12px double;
-    background-color: #f3b017;
 }
-
-
-.tapa-bocas {
-    background: no-repeat url("../img/tapa-bocas.jpg") right;
-    background-size: 30%;
-    width: 50px;
-    height: 100px;
-}
-
-.footer-fancy {
-    background-color: #f3b017;
-}
-
-.box-promociones{
-    background-color:#f3b017;
-    border-radius: 10px;
-
-}
-.btn-color-num{
-    background-color: #cd221a !important;
-    color: white !important;
-}
-
