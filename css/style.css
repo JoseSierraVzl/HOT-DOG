@@ -86,15 +86,15 @@
 
 @media (max-width:406px) {
     .imagen {
-        background-size: 165px;
-        height: 12vh;
+        background-size: 160px;
+        height: 13vh;
 
     }
 
     .fondo-rojo {
         background-color: #cd221a;
         background-position: center top;
-        height: 60vh;
+        height: 68vh;
 
     }
 
@@ -108,7 +108,7 @@
     }
 
     .fondo-rojo {
-        height: 80vh;
+        height: 70vh;
 
     }
 
@@ -185,6 +185,7 @@
     border: #243b64 12px double;
     background-color: #f3b017;
 }
+
 
 .tapa-bocas {
     background: no-repeat url("../img/tapa-bocas.jpg") right;
